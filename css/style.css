@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fc; /* Light background */
+}
+
+h1 {
+    color: #4e73df; /* Blue color for the heading */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+header {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#title {
+    color: #4e73df; /* Blue color for the title */
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-align: center ;
+}
+form {
+    background-color: white;
+    border: 1px solid #e3e6f0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #5a5c69;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d3e2;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #6e707e;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #2e59d9;
+}
+
+form button[type="reset"] {
+    background-color: #e3e6f0;
+    color: #858796;
+}
+
+form button[type="reset"]:hover {
+    background-color: #d1d3e2;
+}
+
+form .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+form .checkbox input {
+    margin-right: 10px;
+}
+
+form .checkbox label {
+    margin: 0;
+    font-weight: normal;
+    color: #5a5c69;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d3e2;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #6e707e;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+.class-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.class-table thead tr {
+    background-color: #4e73df;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.class-table th,
+.class-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.class-table tbody tr:nth-child(even) {
+    background-color: #f8f9fc;
+}
+
+.class-table tbody tr:hover {
+    background-color: #f1f1f1;
+}

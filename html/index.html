@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedure Query</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="regis.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 id="title">Class List</h1>
+    <form id="class-form">
+        <label for="classid">Class ID:</label>
+        <input type="text" id="classid" name="classid" required>
+        <br>
+        <label for="courseid">Course ID:</label>
+        <input type="text" id="courseid" name="courseid" required>
+        <br>
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester" name="semester" required>
+        <br>
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year" required>
+        <br>
+        <button type="submit">Fetch Procedure Data</button>
+    </form>
+    <div id="class-list"></div>
+    <script>
+        document.getElementById("class-form").addEventListener("submit", function(event) {
+            const classId = document.getElementById("classid").value.trim();
+            const courseId = document.getElementById("courseid").value.trim();
+            const semester = document.getElementById("semester").value.trim();
+            const year = document.getElementById("year").value.trim();
+    
+            // Validate Class ID (3 characters)
+            if (classId.length !== 3) {
+                alert("Class ID must be exactly 3 characters.");
+                event.preventDefault();
+                return;
+            }
+    
+            // Validate Course ID (6 characters)
+            if (courseId.length !== 6) {
+                alert("Course ID must be exactly 6 characters.");
+                event.preventDefault();
+                return;
+            }
+    
+            // Validate Semester (1 character)
+            if (semester.length !== 1) {
+                alert("Semester must be exactly 1 character.");
+                event.preventDefault();
+                return;
+            }
+    
+            // Validate Year (2 characters)
+            if (year.length !== 2) {
+                alert("Year must be exactly 2 characters.");
+                event.preventDefault();
+                return;
+            }
+    
+            // If all validations pass, the form will be submitted
+        });
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

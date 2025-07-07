@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedure Query</title>
+    <link rel="stylesheet" href="../css/regis.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="regis.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="title">Studying Class</h1>
+    <form id="studying-class-form">
+        <label for="studentid">Student ID:</label>
+        <input type="text" id="studentid" name="studentid" required>
+        <br>
+        <button type="submit">Fetch Studying Class Data</button>
+    </form>
+
+    <div id="center-container">
+        <input type="text" id="search-studying-class" placeholder="Search in studying class list..." 
+               style="margin: 10px 10px 10px 0; display: inline-block; width: 30%; padding: 10px;">
+        <!-- <button id="filter-studying-class-list" class="filter" style="display: inline-block;">Filter</button> -->
+    </div>
+    <div id="studying-class-list"></div>
+
+    <button id="fetch-class-list-button" class="fetch">View Class List</button>
+    <div id="class-list"></div>
+    
+    
+    <script src="../js/regis.js"></script>
+</body>
+</html>

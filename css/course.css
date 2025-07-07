@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fc; /* Light background */
+}
+
+h1 {
+    color: #4e73df; /* Blue color for the heading */
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#title {
+    color: #4e73df; /* Blue color for the title */
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-align: center ;
+}
+form {
+    background-color: white;
+    border: 1px solid #e3e6f0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #5a5c69;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d3e2;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #6e707e;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button:hover {
+    background-color: #2e59d9;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    margin: 20px auto; /* Center the table horizontally */
+    width: 90%; /* Adjust the width to fit the content */
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #d1d3e2;
+    padding: 10px;
+    text-align: center;
+    color: #5a5c69;
+    word-wrap: break-word;
+}
+
+table th {
+    background-color: #f8f9fc;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fc;
+}
+/* Style for Delete button */
+button.delete-button {
+    background-color: #e74a3b; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+button.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Style for Update button */
+button.update-button {
+    background-color: #f6c23e; /* Yellow color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+button.update-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Optional: Adds spacing between the buttons */
+}
+
+.button-container button {
+    flex: 1; /* Optional: Makes both buttons the same width */
+}
+.button-container #final-update-button {
+    display: none;
+}

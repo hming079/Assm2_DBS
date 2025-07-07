@@ -1,0 +1,14 @@
+
+npm i express body-parser mssql cors dotenv
+npm init
+file .env -> add info(trong mssql: tao user, password, gan cho database)
+
+create login my_user with password= '1234';
+
+USE NORTHWND;
+CREATE USER my_user FOR LOGIN my_user;
+ALTER ROLE db_owner ADD MEMBER my_user;
+
+db_username có sqlexpress nên bật sql web browser lên
+
+db.js roi server.js

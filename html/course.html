@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedure Query</title>
+    <link rel="stylesheet" href="../css/course.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="regis.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="title">Course list</h1>
+    <form id="course-form">
+        <label for="courseid">Course ID:</label>
+        <input type="text" id="courseid" name="courseid" required>
+        <br>
+        <label for="coursename">Course Name:</label>
+        <input type="text" id="coursename" name="coursename" required>
+        <br>
+        <label for="creditnum">Credit Number:</label>
+        <input type="number" id="creditnum" name="creditnum" required>
+        <br>
+        <label for="lessonnum">Lesson Number:</label>
+        <input type="number" id="lessonnum" name="lessonnum" required>
+        <br>
+        <label for="departmentid">Department ID:</label>
+        <input type="number" id="departmentid" name="departmentid" required>
+        <br>
+        <label for="prerequisite">Prerequisite Course ID:</label>
+        <input type="text" id="prerequisite" name="prerequisite">
+        <br>
+        <div class="button-container">
+            <button type="submit" id="add-course-button">Add Course</button>
+            <button type="submit" id="final-update-button">Update Course</button>
+        </div>
+    </form>
+    <div id="course-list"></div>
+    
+    <script src="../js/course.js"></script>
+</body>
+</html>
